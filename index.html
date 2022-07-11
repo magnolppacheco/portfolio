@@ -4,130 +4,192 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Portfolio Magno Pacheco</title>
   </head>
 
   <body>
-
     <nav id="menu">
-      <figure>
-        <img src="" alt="" />
-      </figure>
+      <section>
+        <h1 id="t1" class="titulos">Portfólio</h1>
+      </section>
+
       <ul id="menu1">
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li class="botoesmenu1">
+          <a class="botoesmenu1" href="#topopagina">Início</a>
+        </li>
+        <li class="botoesmenu1">
+          <a class="botoesmenu1" href="#sobre">Sobre Mim</a>
+        </li>
+        <li class="botoesmenu1">
+          <a class="botoesmenu1" href="#projetos">Projetos</a>
+        </li>
+        <li class="botoesmenu1">
+          <a class="botoesmenu1" href="#skills">Skills</a>
+        </li>
+        <li class="botoesmenu1">
+          <a class="botoesmenu1" href="#contato">Contato</a>
+        </li>
       </ul>
     </nav>
 
-    <header>
-      <h1>Portfólio</h1>
-      <h2>Olá, bem vindo!</h2>
+    <header id="topopagina">
+      <figure id="figure1">
+        <img src="./assets/images/imagem pc.png" id="imagemmenu" alt="" />
+      </figure>
+
+      <section id="texto3">
+        <h1>Olá, me chamo Magno Pacheco</h1>
+        <h2>Bem vindo ao meu espaço!</h2>
+      </section>
     </header>
 
     <main>
+      <!-- Informacoes sobre mim -->
       <section id="sobre">
-        Sobre Mim
-        <p>
-          Me chamo Magno Luiz Pontes Pacheco.Sou natural e residente de
-          Maceió-Al, tenho 28 anos e, atualmente, sou aluno da Blue edtech.
-          Estou estudando desenvolvimento web full stack
-        </p>
+        <h2 id="sobremimtitulo" class="titulos">Sobre Mim</h2>
+
+        <article id="configsobre">
+          <p id="descricaosobremim" class="textocomum">
+            Me chamo Magno Luiz Pontes Pacheco. Sou natural e residente de
+            Maceió-Al, tenho 28 anos e sou aluno da escola de tecnologia Blue Edtech. 
+            Atualmente, estudo desenvolvimento web full-stack, inicei meus estudos em 2022 pois me
+            encantei com a área assim que procurei mais a respeito... Meu
+            objetivo é se aperfeiçoar cada vez mais na minha carreira como
+            desenvolvedor de software. Sou apaixonado por games, tecnologia e artes marciais.
+          </p>
+        </article>
+      </section>
+
+      <!-- Projetos Desenvolvidos -->
+      <section id="projetos">
+        <h2 id="projetostitulo" class="titulos">Projetos</h2>
+
+        <section id="projetosicones">
+          <a
+            href="https://github.com/magnolppacheco/cursoblueedtech.fullstack/blob/fff125a23c48729bf29ea0c72d2700ba5b8b0f43/Projetos/Projeto%200%20-%20Detetive/ProjetoM0%20-%20Detetive.js"
+            class="botoesmenu2"
+            target="_blank"
+            >Detetive</a
+          >
+          <a
+            href="https://github.com/magnolppacheco/cursoblueedtech.fullstack/blob/fff125a23c48729bf29ea0c72d2700ba5b8b0f43/Projetos/Projeto%2001%20-%20Jornada%20do%20Her%C3%B3i/ProjetoM1%20-%20Jornada%20do%20Heroi.js"
+            class="botoesmenu2"
+            target="_blank"
+            >Jornada do Herói</a
+          >
+          <a
+            href="https://github.com/magnolppacheco/cursoblueedtech.fullstack/blob/469fdd626468c04a1a464aa740efa17483d6e115/Projetos/Projeto%2002%20-%20Jokenp%C3%B4/Projeto%2002%20-%20Jokenp%C3%B4.js"
+            class="botoesmenu2"
+            target="_blank"
+            >Jokenpô</a
+          >
+          <a
+            href="https://github.com/magnolppacheco/cursoblueedtech.fullstack/blob/469fdd626468c04a1a464aa740efa17483d6e115/Projetos/Projeto%2003%20-%20Jogo%20da%20Velha/Projeto03.js"
+            class="botoesmenu2"
+            target="_blank"
+            >Jogo da Velha</a
+          >
+          <a
+            href="https://github.com/magnolppacheco/cursoblueedtech.fullstack/blob/469fdd626468c04a1a464aa740efa17483d6e115/Projetos/Projeto%2004%20-%20Jogo%20de%20Fic%C3%A7%C3%A3o%20Interativa/Projeto04.js"
+            class="botoesmenu2"
+            target="_blank"
+            >Jogo de Ficção Interativa</a
+          >
+        </section>
+      </section>
+
+      <!-- Habilidades -->
+      <section id="skills">
+        <h2 id="skillstitulo" class="titulos">Skills</h2>
+
+        <div id="skillsconfig">
+          <figure class="legendaimagem">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              id="javascriptimage"
+              class="imageskills"
+            />
+            <figcaption class>JavaScript</figcaption>
+          </figure>
+
+          <figure class="legendaimagem">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              id="nodeimage"
+              class="imageskills"
+            />
+            <figcaption>NodeJs</figcaption>
+          </figure>
+
+          <figure class="legendaimagem">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              id="htmlimage"
+              class="imageskills"
+            />
+            <figcaption>Html</figcaption>
+          </figure>
+
+          <figure class="legendaimagem">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              id="cssimage"
+              class="imageskills"
+            />
+            <figcaption>Css</figcaption>
+          </figure>
+        </div>
       </section>
 
       <!-- Redes Sociais -->
       <section id="contato">
-        Contato
-        <a href="https://www.instagram.com/magnolppacheco/" target="_blank"
-          ><img
-            src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+        <h2 id="contatotitulo" class="titulos">Contato</h2>
+
+        <section id="contatosicones">
+          <a
+            href="https://www.instagram.com/magnolppacheco/"
+            class="botoesmenu2"
             target="_blank"
-        /></a>
-        <a
-          href="https://discordapp.com/users/712066157070516265"
-          target="_blank"
-          ><img
-            src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"
+            ><img
+              src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+              class="tamanhoicone"
+              target="_blank"
+          /></a>
+          <a
+            href="https://discordapp.com/users/712066157070516265"
+            class="botoesmenu2"
             target="_blank"
-        /></a>
-        <a href="mailto:magnolppacheco@gmail.com"
-          ><img
-            src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"
+            ><img
+              src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"
+              class="tamanhoicone"
+              target="_blank"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/magno-pacheco-55791a23a/"
+            class="botoesmenu2"
             target="_blank"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/magno-pacheco-55791a23a/"
-          target="_blank"
-          ><img
-            src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+            ><img
+              src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+              class="tamanhoicone"
+              target="_blank"
+          /></a>
+          <a
+            href="mailto:magnolppacheco@gmail.com"
+            class="botoesmenu2"
             target="_blank"
-        /></a>
-      </section>
-
-      <section id="projetos">Projetos</section>
-      <a
-        href="https://github.com/magnolppacheco/cursoblueedtech.fullstack/blob/469fdd626468c04a1a464aa740efa17483d6e115/Projetos/Projeto%200%20-%20Detetive/ProjetoM0%20-%20Detetive.js"
-        target="_blank"
-        >Projeto 1</a
-      >
-      <a
-        href="https://github.com/magnolppacheco/cursoblueedtech.fullstack/blob/469fdd626468c04a1a464aa740efa17483d6e115/Projetos/Projeto%2001%20-%20Jornada%20do%20Her%C3%B3i/ProjetoM1%20-%20Jornada%20do%20Heroi.js"
-        target="_blank"
-        >Projeto 2</a
-      >
-      <a
-        href="https://github.com/magnolppacheco/cursoblueedtech.fullstack/blob/469fdd626468c04a1a464aa740efa17483d6e115/Projetos/Projeto%2002%20-%20Jokenp%C3%B4/Projeto%2002%20-%20Jokenp%C3%B4.js"
-        target="_blank"
-        >Projeto 3</a
-      >
-      <a
-        href="https://github.com/magnolppacheco/cursoblueedtech.fullstack/blob/469fdd626468c04a1a464aa740efa17483d6e115/Projetos/Projeto%2003%20-%20Jogo%20da%20Velha/Projeto03.js"
-        target="_blank"
-        >Projeto 4</a
-      >
-      <a
-        href="https://github.com/magnolppacheco/cursoblueedtech.fullstack/blob/469fdd626468c04a1a464aa740efa17483d6e115/Projetos/Projeto%2004%20-%20Jogo%20de%20Fic%C3%A7%C3%A3o%20Interativa/Projeto04.js"
-        target="_blank"
-        >Projeto 5</a
-      >
-
-      <section id="skills">
-        Skills
-
-        <figure>
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            id="javascript.image"
-            class="image.skills"
-          />
-          <figcaption>JavaScript</figcaption>
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            id="node.image"
-            class="image.skills"
-          />
-          <figcaption>NodeJs</figcaption>
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-            id="html.image"
-            class="image.skills"
-          />
-          <figcaption>Html</figcaption>
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-            id="css.image"
-            class="image.skills"
-          />
-          <figcaption>Css</figcaption>
-        </figure>
+            ><img
+              src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"
+              class="tamanhoicone"
+              target="_blank"
+          /></a>
+        </section>
       </section>
     </main>
 
-    <footer>Criado por Magno Pacheco</footer>
+    <footer id="rodape">
+      <p class="textocomum">Criado por</p>
+      <p class="titulos">Magno Pacheco</p>
+    </footer>
   </body>
 </html>

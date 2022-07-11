@@ -2,12 +2,19 @@
 *{
     padding:0;
     margin:0;
+    border:0;
+    box-sizing: border-box;
     font-family: Arvo, Arial, Helvetica, sans-serif;
     list-style:none;
+    font-style: normal;
     text-decoration: none;
-    color: #3e3e3e;
 }
 
+body{
+    background-color: #09131B;
+    
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+}
 html{
     /* Rolar do mouse suave */
     scroll-behavior: smooth;
@@ -15,18 +22,38 @@ html{
 }
 
 header{
-    padding-top: 13vh;
-    height: 10vh;
-    border: 1px solid red;
-    font-size: 2vh;
-    
+    padding-top: 8vw;
+    height: 45vw;
+    width: 100%;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: space-evenly;
+    color: #ff652f; 
+}
+#texto3{
+    padding-top: 8vw;
+    justify-content: center;
 }
 
-#menu1{
-    display: flex;
-    width: 50%;
-    justify-content: space-evenly;
-    border: 1px solid red;
+/* cor dos titulos */
+.titulos{
+color: #ff652f;
+}
+
+/* cor do texto comum */
+.textocomum{
+color: #ffffff;
+}
+
+/* menu inicio da pagina */
+.botoesmenu1{
+    color: #ff652f;
+    font-size: 2vw;
+    transition: all .4 ease;
+    transform: scale(.9);
+}
+.botoesmenu1:hover{
+    transform: scale(1);
 }
 
 /* Menu de navegação */
@@ -35,7 +62,291 @@ header{
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 10vh;
-    background-color: aqua;
+    height: 5.5vw;
+    background-color: #09131B;
+    color: #ff652f;
+    z-index: 1;
+    border-radius: 20px;
+    border: 3px #ff652f solid;
 }
 
+/* listas do menu */
+#menu1{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    height: 2vw;
+    color: #ff652f;
+    margin: 1vw;
+}
+
+#figure1{
+    width: 20%;
+    height: 20vw;
+}
+
+#imagemmenu{
+    width: 100%;
+    height: 100%
+}
+
+.botoesmenu2{
+    color: #ffffff;
+    font-size: 1.5vw;
+    transition: all .4 ease;
+    transform: scale(.9);
+    z-index: 0;
+}
+.botoesmenu2:hover{
+    transform: scale(1);
+}
+
+/* título inicial */
+#t1{
+font-size: 4vw;
+padding-left: 1vw;
+padding-bottom: 1vw;
+}
+
+/* box do sobre mim */
+#sobre{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 42vw;
+    flex-direction: column;
+    align-items: center;  
+}
+
+/* titulo do sobre mim */
+#sobremimtitulo{
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* box do paragrafo do sobre mim */
+#configsobre{
+    height: 10vw;
+    width: 50%;
+}
+
+#descricaosobremim{
+    text-align: justify;
+    font-size: 1.3vw;
+}
+
+/* titulo projetos */
+#projetos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 46vw;
+    flex-direction: column;
+    align-items: center;    
+}
+
+/* projetos titulo */
+#projetostitulo{
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* box dos projetos */
+#projetosicones{
+    display: flex;
+    justify-content: space-evenly;
+    height: 2vw;
+    width: 100%;
+}
+
+/* titulo skills */
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 38vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* skills titulo */
+#skillstitulo{
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* skill configuração */
+#skillsconfig{
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vw;
+    width: 70%;
+}
+
+.imageskills{
+    width: 4vw;
+    height: 4vw;
+}
+
+.legendaimagem{
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.4vw;
+}
+
+/* box contato */
+#contato{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 45vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* contato titulo */
+#contatotitulo{
+    text-align: center;
+    font-size: 2vw;
+
+}
+
+/* contato icones */
+#contatosicones{
+    display: flex;
+    justify-content: space-evenly;
+    height: 10%;
+    width: 30%;   
+}
+
+/* tamanho dos icones da section contato */
+.tamanhoicone{
+    width: 9vw;
+    height: 3vw;
+}
+
+
+#rodape{
+    width: 100%;
+    height: 2vw;
+    font-size: 1.3vw;
+    display: flex;
+    gap: .5vw;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    nav#menu{
+        height: 10vw;
+    }
+
+    #menu1{
+        width: 100%;
+    }
+
+    #t1{
+        display: none;
+    }
+
+    .botoesmenu1{
+        font-size: 4vw;
+    }
+
+    figure#figure1{
+        display: none;
+    }
+
+    section#texto3{
+        font-size: 4.2vw;
+    }
+
+    #sobre{
+        height: 100vw;
+        padding-bottom: 40vw;
+        gap: 2vw;
+
+    }
+
+    #sobremimtitulo{
+        font-size: 6vw;
+    }
+
+    #configsobre{
+        width: 90%;
+    }
+
+    #descricaosobremim{
+        font-size: 4vw;
+    }
+    #projetos{
+        height: 100vw;
+        padding-bottom: 40vw;
+        gap: 10vw;
+
+    }
+    
+    #projetostitulo{
+       font-size: 6vw;
+    }
+    
+    #projetosicones{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoesmenu2{
+        font-size: 5vw;
+        height: 10vw;
+        padding-bottom: 2vw;
+    }
+
+    #skills{
+        height: 100vw;
+        padding-bottom: 30vw;
+        gap: 10vw;
+    }
+
+    #skillsconfig{
+        gap: 3vw;
+    }
+
+
+    #skillstitulo{
+        font-size: 6vw;
+    }
+    
+    .imageskills{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .legendaimagem{
+        font-size: 4vw;
+    }
+
+    #contato{
+        height: 120vw;
+        padding-bottom: 40vw;
+        gap: 30vw;
+    }
+
+    #contatotitulo{
+        font-size: 6vw;
+    }
+    
+    #contatosicones{
+        flex-direction: column;
+        gap: 5vw;
+        width: 50%;
+    }
+
+    .tamanhoicone{
+        width: 50vw;
+        height: 13vw;
+    }
+    
+    #rodape{
+        font-size: 5vw;
+    }
+
+}

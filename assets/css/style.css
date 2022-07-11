@@ -56,6 +56,11 @@ color: #ffffff;
     transform: scale(1);
 }
 
+.botoesativo{
+    background-color:#ff652f;
+    color: #09131B;
+}
+
 /* Menu de navegação */
 #menu{
     display: flex;
